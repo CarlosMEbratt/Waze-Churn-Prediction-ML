@@ -1,66 +1,60 @@
-🚗 Waze User Churn Prediction using Machine Learning
+# 🚗 Waze User Churn Prediction using Machine Learning
+
 This project builds a predictive model to identify which users are likely to stop using the Waze app. By analyzing behavioral and demographic patterns, it aims to help retain users by detecting churn risk early.
 
-🎯 Project Objective
+## 🎯 Project Objective
+
 Predict user churn based on historical usage data and user characteristics. The goal is to support targeted retention strategies by identifying high-risk users before they stop using the app.
 
-🧰 Tools & Technologies
-Python
+## 🧰 Tools & Technologies
 
-Pandas, NumPy
+* **Python**
+* **Pandas, NumPy**
+* **Matplotlib, Seaborn**
+* **Scikit-learn**
+* **Jupyter Notebook**
 
-Matplotlib, Seaborn
+## 🔍 Workflow
 
-Scikit-learn
+1. **Data Exploration & Visualization**
 
-Jupyter Notebook
+   * Reviewed user demographics and behavioral patterns (e.g., frequency, engagement).
+   * Used bar plots, histograms, and correlation heatmaps for visual insights.
 
-🔍 Workflow
-Data Exploration & Visualization
+2. **Preprocessing**
 
-Reviewed user demographics and behavioral patterns (e.g., frequency, engagement).
+   * Converted categorical variables to numerical.
+   * Normalized and cleaned the dataset.
+   * Handled imbalanced data with resampling (if applicable).
 
-Used bar plots, histograms, and correlation heatmaps for visual insights.
+3. **Modeling**
 
-Preprocessing
+   * Applied multiple classifiers: Logistic Regression, Random Forest, and XGBoost.
+   * Evaluated using metrics such as precision, recall, F1-score, and AUC-ROC.
+   * Performed cross-validation and hyperparameter tuning.
 
-Converted categorical variables to numerical.
+4. **Results**
 
-Normalized and cleaned the dataset.
+   * Identified key predictors of churn (e.g., reduced usage frequency, certain account types).
+   * Final model showed strong classification performance and generalization capability.
 
-Handled imbalanced data with resampling (if applicable).
+## 📁 File Structure
 
-Modeling
-
-Applied multiple classifiers: Logistic Regression, Random Forest, and XGBoost.
-
-Evaluated using metrics such as precision, recall, F1-score, and AUC-ROC.
-
-Performed cross-validation and hyperparameter tuning.
-
-Results
-
-Identified key predictors of churn (e.g., reduced usage frequency, certain account types).
-
-Final model showed strong classification performance and generalization capability.
-
-📁 File Structure
-bash
-Copy
-Edit
+```
 ├── waze_project.ipynb         # Main notebook with EDA, model training, and results
 ├── data/                      # Dataset (not publicly shared)
 └── README.md                  # Project documentation
-📌 Key Insights
-Users with declining usage over time are more likely to churn.
+```
 
-Engagement-based features were highly predictive.
+## 📌 Key Insights
 
-The churn prediction model could be embedded into marketing systems for retention targeting.
+* Users with declining usage over time are more likely to churn.
+* Engagement-based features were highly predictive.
+* The churn prediction model could be embedded into marketing systems for retention targeting.
 
-🔄 Future Enhancements
-Deploy as a web dashboard to monitor churn scores in real time.
+## 🔄 Future Enhancements
 
-Integrate SHAP values for explainability.
+* Deploy as a web dashboard to monitor churn scores in real time.
+* Integrate SHAP values for explainability.
+* Fine-tune with temporal behavior data for more accurate modeling.
 
-Fine-tune with temporal behavior data for more accurate modeling.
